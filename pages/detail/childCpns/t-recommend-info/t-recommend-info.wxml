@@ -1,7 +1,6 @@
 <!--pages/detail/childCpns/t-recommend-info/t-recommend-info.wxml-->
 <view class="recommend">
   <view class="header">商品推荐</view>
-  <!-- 显示推荐商品内容 -->
   <view class="content">
     <t-goods goodsList="{{recommends}}"/>
   </view>
