@@ -1,4 +1,3 @@
-// 如果都是使用相同的 url的话就直接在这里导入，就不用转入前缀了
 import { baseURL, timeout } from './config.js'
 
 // 网络请求的封装
