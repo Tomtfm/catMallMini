@@ -1,6 +1,5 @@
 <!--pages/category/childCpns/t-content/t-content.wxml-->
 <scroll-view class="content" scroll-y>
-  <!-- 1.子类别展示 -->
   <view class="subcategory">
     <block wx:for="{{subcategories}}" wx:key="index">
       <view class="item">
@@ -9,7 +8,6 @@
       </view>
     </block>
   </view>
-  <!-- 2.详情数据展示 -->
   <view class="detail">
     <t-goods goodsList="{{categoryDetail}}"/>
   </view>
