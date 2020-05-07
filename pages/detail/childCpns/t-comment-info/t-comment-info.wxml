@@ -6,21 +6,15 @@
     <view>用户评论</view>
     <view>更多 >></view>
   </view>
-  <!-- 1.用户头像及名称 -->
   <view class="user">
     <image src="{{commentInfo.user.avatar}}"/>
     <text>{{commentInfo.user.uname}}</text>
   </view>
-  <!-- 2.评价内容 -->
   <view class="comment">{{commentInfo.content}}</view>
-  <!-- 3. 评价时间及商品类型-->
   <view class="other-info">
-    <!-- 3.1.将时间戳 转化为 字符串格式 -->
     <view class="time">{{format.dateFormat(commentInfo.created, 'yyyy/MM/dd hh:mm:ss')}}</view>
-    <!-- 3.2.显示商品类型 -->
     <view class="style">{{commentInfo.style}}</view>
   </view>
-  <!-- 4.买家秀-->
   <view class="picture">
     <block wx:for="{{commentInfo.images}}" wx:key="index">
       <image src="{{item}}" mode="widthFix"/>
