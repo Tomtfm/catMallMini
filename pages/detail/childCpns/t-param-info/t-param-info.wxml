@@ -1,6 +1,5 @@
 <!--pages/detail/childCpns/t-param-info/t-param-info.wxml-->
 <view class="param-info">
-  <!-- 1.尺寸相关 -->
   <view class="size">
     <block wx:for="{{paramInfo.sizes}}" wx:for-item="itemx" wx:for-index="index" wx:key="index">
       <view class="size-table">
@@ -14,8 +13,6 @@
       </view>
     </block>
   </view>
-  
-  <!-- 2.信息相关 -->
   <view class="info">
     <block wx:for="{{paramInfo.infos}}" wx:key="index">
       <view class="info-row row">
