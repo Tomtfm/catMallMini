@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "t-swiper": "/components/t-swiper/t-swiper",
+    "t-tab-control": "/components/t-tab-control/t-tab-control",
+    "t-goods": "/components/t-goods/t-goods",
+    "t-goods-item": "/components/t-goods-item/t-goods-item",
+    "t-back-top": "/components/t-back-top/t-back-top",
+    "t-recommed": "./childCpns/t-recommed/t-recommed",
+    "t-popular": "./childCpns/t-popular/t-popular"
+  },
+  "navigationBarTitleText": "购物猫"
+}

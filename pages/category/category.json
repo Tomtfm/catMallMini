@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "t-menu": "./childCpns/t-menu/t-menu",
+    "t-content": "./childCpns/t-content/t-content"
+  },
+  "navigationBarTitleText": "商品分类"
+}

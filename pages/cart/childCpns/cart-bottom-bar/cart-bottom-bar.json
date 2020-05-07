@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "t-check-icon": "/components/t-check-icon/t-check-icon"
+  }
+}

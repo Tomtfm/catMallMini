@@ -1,0 +1,32 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view class="detail" scroll-y>
+  <!-- 1.顶部轮播图 -->
+  <t-swiper  class="d-swiper" list="{{topImages}}"/>
+
+  <!-- 2.基本信息 -->
+  <t-base-info baseInfo="{{baseInfo}}"/>
+
+  <!-- 3.店铺信息 -->
+  <t-shop-info shopInfo="{{shopInfo}}"/>
+
+  <!-- 4.商品描述信息 -->
+  <t-detail-info detailInfo="{{detailInfo}}"/>
+
+  <!-- 5.参数信息 -->
+  <t-param-info paramInfo="{{paramInfo}}"/>
+
+  <!-- 6.评论信息 -->
+  <t-comment-info commentInfo="{{commentInfo}}"/>
+
+  <!-- 7.商品推荐 -->
+  <t-recommend-info recommends="{{recommends}}"/>
+</scroll-view>
+
+<!-- 8.回到顶部 -->
+<!-- <t-back-top /> -->
+
+<!-- 9.按钮：加入购物车 -->
+<t-bottom-bar bind:addCart="onAddCart"/>
+
+
+

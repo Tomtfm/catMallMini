@@ -1,0 +1,7 @@
+<!--pages/profile/profile.wxml-->
+<view class="profile">
+  <t-header/>
+  <t-info/>
+  <t-list-view infos="{{orderList}}"/>
+  <t-list-view infos="{{serviceList}}"/>
+</view>

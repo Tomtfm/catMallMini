@@ -1,0 +1,29 @@
+<!--pages/detail/childCpns/t-base-info/t-base-info.wxml-->
+<view class="base-info">
+  <!-- 1.标题 -->
+  <view class="title">{{baseInfo.title}}</view>
+  <!-- 2.价格、折扣 -->
+  <view class="price-info">
+    <text class="new-price">{{baseInfo.newPrice}}</text>
+    <text class="old-price">{{baseInfo.oldPrice}}</text>
+    <text class="discount">{{baseInfo.discount}}</text>
+  </view>
+  <!-- 3.销量/收藏/默认快递 -->
+  <view class="sell-info">
+    <block wx:for="{{baseInfo.columns}}" wx:key="index">
+      <view class="sell-item">{{item}}</view>
+    </block>
+  </view>
+  <!-- 4.全国包邮、退货、发货 -->
+  <view class="service">
+    <block wx:for="{{baseInfo.services}}" wx:key="index">
+      <!-- 判断：是否显示延误必赔 -->
+      <block wx:if="{{index !== 0}}">
+        <view class="service-item">
+          <image class="icon" src="{{item.icon}}"/>
+          <text class="name">{{item.name}}</text>
+        </view>
+      </block>
+    </block>
+  </view>
+</view>

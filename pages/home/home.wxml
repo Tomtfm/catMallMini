@@ -1,0 +1,26 @@
+<!--pages/home/home.wxml-->
+<!-- 组件封装至布局 -->
+<!-- 1.展示轮播图 -->
+<t-swiper list="{{banners}}"/>
+
+<!-- 2.推荐数据的展示  -->
+<t-recommed recommends="{{recommends}}" bind:imageLoad="handleImgLoad"/>
+
+<!-- 3.展示本周流行 -->
+<t-popular/>
+
+<!-- 4.t-tab-control -->
+<t-tab-control titles="{{titles}}" 
+               bind:tabclick="handleTabClick"
+               id="top-control"
+               class="{{isTobFixed ? 'fixed': ''}}"/>
+<t-tab-control titles="{{titles}}"  wx:if="{{isTobFixed}}"/>
+
+<!-- 5.展示商品数据 -->
+<t-goods goodsList="{{goods[currentType].list}}"/>
+
+<!-- 6.回到顶部 -->
+<!-- 注：hidden属性对于自定义的组件是无效的 -->
+<t-back-top wx:if="{{showBackTop}}"/>
+
+

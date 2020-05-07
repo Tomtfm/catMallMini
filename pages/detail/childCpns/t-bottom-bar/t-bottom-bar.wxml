@@ -1,0 +1,25 @@
+<!--pages/detail/childCpns/t-bottom-bar/t-bottom-bar.wxml-->
+<view class="bottom-bar">
+  <view class="bar-left bar-item">
+    <!-- 1.客服小标签 -->
+    <view class="left-item service">
+      <image src="/assets/detail/service.png"/>
+      <view>客服</view>
+    </view>
+    <!-- 2.店铺小标签 -->
+    <view class="left-item">
+      <image src="/assets/detail/shop.png"/>
+      <view>店铺</view>
+    </view>
+    <!-- 3.收藏小标签 -->
+    <view class="left-item">
+      <image src="/assets/detail/collect.png"/>
+      <view>收藏</view>
+    </view>
+  </view>
+  <!-- 4.加入购物车事件 -->
+  <view class="bar-right bar-item">
+    <view class="right-item cart" bindtap="onAddCart">加入购物车</view>
+    <view class="right-item buy">购买</view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "t-header": "./childCpns/t-header/t-header",
+    "t-info": "./childCpns/t-info/t-info",
+    "t-list-view": "./childCpns/t-list-view/t-list-view"
+  },
+  "navigationBarTitleText": "我的信息"
+}
