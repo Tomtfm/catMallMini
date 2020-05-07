@@ -1,9 +1,7 @@
 <!--pages/category/category.wxml-->
 <view class="category">
-  <!-- 1.左边-菜单导航 -->
   <t-menu categories="{{categories}}" bind:menuclick="menuClick"/>
- 
-  <!-- 2.右边-商品内容详情 -->
+  
   <t-content  subcategories="{{categoryData[currentIndex].subcategories}}"
               categoryDetail="{{categoryData[currentIndex].categoryDetail}}"/>
 </view>
