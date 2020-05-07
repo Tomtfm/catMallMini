@@ -1,13 +1,10 @@
 <!--pages/detail/childCpns/t-shop-info/t-shop-info.wxml-->
 <view class="shop-info">
-  <!-- 1.店铺名称及login -->
   <view class="title-info">
     <image src="{{shopInfo.logo}}"/>
     <text>{{shopInfo.name}}</text>
   </view>
-  <!-- 2.销量及评分 -->
   <view class="sell-info">
-   <!-- 2.1.总销量/全部宝贝-->
     <view class="count-info sell-item">
       <view class="total-sell count-item">
         <view class="count">{{shopInfo.sells}}</view>
@@ -18,7 +15,6 @@
         <view class="text">全部宝贝</view>
       </view>
     </view>
-    <!--2.2.评价  -->
     <view class="grade-info sell-item">
       <block wx:for="{{shopInfo.score}}" wx:key="index">
         <view class="grade-row">
